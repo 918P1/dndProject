@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5FA83D7D290B11EB00A8C438 /* Alerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA83D7C290B11EB00A8C438 /* Alerts.swift */; };
 		5FDD5947290900BA00B7C728 /* dndProjectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FDD5946290900BA00B7C728 /* dndProjectApp.swift */; };
 		5FDD5949290900BA00B7C728 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FDD5948290900BA00B7C728 /* ContentView.swift */; };
 		5FDD594B290900BD00B7C728 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5FDD594A290900BD00B7C728 /* Assets.xcassets */; };
@@ -14,6 +15,10 @@
 		5FDD5958290900BD00B7C728 /* dndProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FDD5957290900BD00B7C728 /* dndProjectTests.swift */; };
 		5FDD5962290900BD00B7C728 /* dndProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FDD5961290900BD00B7C728 /* dndProjectUITests.swift */; };
 		5FDD5964290900BD00B7C728 /* dndProjectUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FDD5963290900BD00B7C728 /* dndProjectUITestsLaunchTests.swift */; };
+		5FDD59732909012800B7C728 /* dndData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FDD59722909012800B7C728 /* dndData.swift */; };
+		5FDD59772909016E00B7C728 /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FDD59762909016E00B7C728 /* DetailViewModel.swift */; };
+		5FDD59792909019F00B7C728 /* ClassesDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FDD59782909019F00B7C728 /* ClassesDetailView.swift */; };
+		5FDD597B290901B500B7C728 /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FDD597A290901B500B7C728 /* ListViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5FA83D7C290B11EB00A8C438 /* Alerts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alerts.swift; sourceTree = "<group>"; };
 		5FDD5943290900BA00B7C728 /* dndProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = dndProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FDD5946290900BA00B7C728 /* dndProjectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dndProjectApp.swift; sourceTree = "<group>"; };
 		5FDD5948290900BA00B7C728 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -44,6 +50,10 @@
 		5FDD595D290900BD00B7C728 /* dndProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = dndProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FDD5961290900BD00B7C728 /* dndProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dndProjectUITests.swift; sourceTree = "<group>"; };
 		5FDD5963290900BD00B7C728 /* dndProjectUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dndProjectUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		5FDD59722909012800B7C728 /* dndData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dndData.swift; sourceTree = "<group>"; };
+		5FDD59762909016E00B7C728 /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
+		5FDD59782909019F00B7C728 /* ClassesDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassesDetailView.swift; sourceTree = "<group>"; };
+		5FDD597A290901B500B7C728 /* ListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +81,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5FA83D7B290B11D200A8C438 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				5FA83D7C290B11EB00A8C438 /* Alerts.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
 		5FDD593A290900BA00B7C728 = {
 			isa = PBXGroup;
 			children = (
@@ -94,8 +112,10 @@
 		5FDD5945290900BA00B7C728 /* dndProject */ = {
 			isa = PBXGroup;
 			children = (
+				5FA83D7B290B11D200A8C438 /* Utilities */,
+				5FDD59712909010700B7C728 /* Model */,
+				5FDD5970290900F800B7C728 /* Views */,
 				5FDD5946290900BA00B7C728 /* dndProjectApp.swift */,
-				5FDD5948290900BA00B7C728 /* ContentView.swift */,
 				5FDD594A290900BD00B7C728 /* Assets.xcassets */,
 				5FDD594C290900BD00B7C728 /* Preview Content */,
 			);
@@ -125,6 +145,41 @@
 				5FDD5963290900BD00B7C728 /* dndProjectUITestsLaunchTests.swift */,
 			);
 			path = dndProjectUITests;
+			sourceTree = "<group>";
+		};
+		5FDD5970290900F800B7C728 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5FDD59752909014900B7C728 /* ListView */,
+				5FDD59742909013D00B7C728 /* DetailView */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		5FDD59712909010700B7C728 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5FDD59722909012800B7C728 /* dndData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5FDD59742909013D00B7C728 /* DetailView */ = {
+			isa = PBXGroup;
+			children = (
+				5FDD59782909019F00B7C728 /* ClassesDetailView.swift */,
+				5FDD59762909016E00B7C728 /* DetailViewModel.swift */,
+			);
+			path = DetailView;
+			sourceTree = "<group>";
+		};
+		5FDD59752909014900B7C728 /* ListView */ = {
+			isa = PBXGroup;
+			children = (
+				5FDD5948290900BA00B7C728 /* ContentView.swift */,
+				5FDD597A290901B500B7C728 /* ListViewModel.swift */,
+			);
+			path = ListView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,8 +312,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5FDD59732909012800B7C728 /* dndData.swift in Sources */,
+				5FDD59792909019F00B7C728 /* ClassesDetailView.swift in Sources */,
+				5FDD597B290901B500B7C728 /* ListViewModel.swift in Sources */,
 				5FDD5949290900BA00B7C728 /* ContentView.swift in Sources */,
 				5FDD5947290900BA00B7C728 /* dndProjectApp.swift in Sources */,
+				5FA83D7D290B11EB00A8C438 /* Alerts.swift in Sources */,
+				5FDD59772909016E00B7C728 /* DetailViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
