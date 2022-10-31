@@ -1,9 +1,9 @@
-////
-////  DetailViewModel.swift
-////  dndProject
-////
-////  Created by Chad Parr on 10/26/22.
-////
+//
+//  DetailViewModel.swift
+//  dndProject
+//
+//  Created by Chad Parr on 10/26/22.
+//
 //
 import Foundation
 

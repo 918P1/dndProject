@@ -12,8 +12,7 @@ final class ListViewModel : ObservableObject{
     @Published var results = [Result]()//published observes state change
     
     func loadData() async{
-        guard let url = URL(string: "https://www.dnd5eapi.co/api/classes") else {//
-            print("Bad url")
+        guard let url = URL(string: "https://www.dnd5eapi.co/api/classes") else {
             return
         }
 
